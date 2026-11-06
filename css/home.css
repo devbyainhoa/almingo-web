@@ -1,90 +1,329 @@
-*{
-    margin: 0;
+
+/* ========================================
+   1. GOOGLE FONTS
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* ========================================
+   2. VARIABLES
+======================================== */
+
+:root {
+    --color-primary: #6C63FF;
+    --color-secondary: #36BFFA;
+    --color-accent: #A78BFA;
+
+    --color-dark: #111827;
+    --color-white: #FFFFFF;
+    --color-light: #F3F4F6;
+    --color-text: #374151;
+
+    --font-title: 'Poppins', sans-serif;
+    --font-text: 'Inter', sans-serif;
 }
+
+
+/* ========================================
+   3. RESET GENERAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 body {
-    background: linear-gradient(to bottom, rgb(248, 190, 82), white, blue);
-    height: 100vh; 
-    margin: 0;
+    font-family: var(--font-text);
+    color: var(--color-dark);
+    background-color: var(--color-white);
 }
+
+
+/* ========================================
+   4. HEADER
+======================================== */
+
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px 30px;
-}
-header nav{
-    flex:1;
-    display: flex;
-    justify-content: space-around;
-}
-.logo{
-    height: 100px;
-}
-header a {
-    text-decoration: none;
-    color: black;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.menu{
-    display: flex;
-    list-style: none;
-    font-size: 30px;
-    background-color: white;
-    border: solid 5px rgb(205, 204, 204);
-    border-radius: 10px;
-}
-.menu li {
-    position: relative;
-}
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    list-style: none;
-    padding: 10px;
-}
-.menu li:hover .submenu {
-    display: block;
-}
-.login{
-    display: flex;
-    list-style: none;
-    font-size: 30px;
-    background-color: white;
-    border: solid 5px rgb(205, 204, 204);
-    border-radius: 10px;
-    padding: 10px;
+    justify-content: space-between;
+
+    padding: 15px 5%;
+
+    background-color: var(--color-white);
 }
 
-main{
+
+/* LOGO */
+
+.logo img {
+    width: 160px;
+    height: auto;
+    display: block;
+}
+
+
+/* NAVIGATION */
+
+header nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 30px;
 }
-h1,h3,h5{
-    padding-top: 10px;
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
 }
-h1{
-    font-size: 90px;
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-dark);
+
+    font-family: var(--font-text);
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
 }
-.imagenhome{
-    width: 800px;
+
+.menu a:hover {
+    color: var(--color-primary);
 }
-.boton1{
-    margin: 10px;
-    background-color: rgb(0, 110, 255);
-    color: white;
-    padding: 15px;
-    border: solid 0px;
-    border-radius: 10px;
+
+
+/* ========================================
+   5. HOME / HERO
+======================================== */
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 600px;
+    padding: 60px 8%;
+
+    background: linear-gradient(
+        120deg,
+        var(--color-dark),
+        #25205B,
+        var(--color-primary)
+    );
+
+    color: var(--color-white);
 }
-.boton2{
-    margin: 10px;
-    padding: 15px;
-    border: solid 0px;
-    border-radius: 10px;
+
+
+/* HERO TEXT */
+
+.home-content {
+    max-width: 550px;
+}
+
+.home-content h1 {
+    font-family: var(--font-title);
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.home-content h2 {
+    font-family: var(--font-title);
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+
+    color: #E5E7EB;
+}
+
+
+/* HERO IMAGE */
+
+.home-image {
+    width: 48%;
+}
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+
+/* ========================================
+   6. BUTTONS
+======================================== */
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.button-primary,
+.button-secondary {
+    display: inline-block;
+
+    padding: 13px 22px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.button-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.button-primary:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-3px);
+}
+
+.button-secondary {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.button-secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+
+/* ========================================
+   7. GENERAL SECTIONS
+======================================== */
+
+main section:not(#home) {
+    padding: 80px 8%;
+}
+
+main section h2 {
+    font-family: var(--font-title);
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+#about {
+    background-color: var(--color-white);
+}
+
+#services {
+    background-color: var(--color-light);
+}
+
+#projects {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+#sustainability {
+    background-color: #F0FDF4;
+}
+
+#contact {
+    background-color: #F5F3FF;
+}
+
+
+/* ========================================
+   8. FOOTER
+======================================== */
+
+footer {
+    padding: 30px 8%;
+
+    background-color: var(--color-dark);
+    color: var(--color-white);
+
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   9. RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #home {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .home-image {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .home-buttons {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    main section:not(#home) {
+        padding: 55px 6%;
+    }
+
 }
