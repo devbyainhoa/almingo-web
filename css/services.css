@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+}
+body {
+    background: linear-gradient(to bottom, rgb(248, 190, 82), white, blue);
+    height: 100vh; 
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+header nav{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    height: 100px;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    background-color: white;
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+}
+.menu li {
+    position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+.login{
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    background-color: white;
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+    padding: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.imagenservices{
+    width: 800px;
+    padding-right: 10px;
+}
+
+aside{
+    padding-top: 30px;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.caja1{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: white;
+    border: solid 2px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.caja2{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin: 20px;
+}

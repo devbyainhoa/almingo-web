@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+}
+body {
+    background: linear-gradient(to bottom, rgb(248, 190, 82), white, blue);
+    height: 100vh; 
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+header nav{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    height: 100px;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    background-color: white;
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+}
+.menu li {
+    position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+.login{
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    background-color: white;
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+h1,h3,h5{
+    padding-top: 10px;
+}
+h1{
+    font-size: 90px;
+}
+.imagenhome{
+    width: 800px;
+}
+.boton1{
+    margin: 10px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 15px;
+    border: solid 0px;
+    border-radius: 10px;
+}
+.boton2{
+    margin: 10px;
+    padding: 15px;
+    border: solid 0px;
+    border-radius: 10px;
+}
