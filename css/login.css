@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+}
+body {
+    background: linear-gradient(to bottom, rgb(248, 190, 82), white, blue);
+    height: 100vh; 
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+header nav{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    height: 100px;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    background-color: white;
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+}
+.menu li {
+    position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+.login{
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    background-color: white;
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+    padding: 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.733);
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+    gap: 30px;
+    max-width: 750px;
+    margin: 40px auto;
+}
+.iniciosesion{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.733);
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.textologin{
+    background-color: rgba(255, 255, 255, 0.733);
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.iconitologin{
+    display: flex;
+
+}
+div {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+.imagenlogin{
+    width: 25px;
+    border: solid 5px rgb(205, 204, 204);
+    border-radius: 10px;
+    padding: 2px;
+    margin-right: 10px;
+}
+.cajatexto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+label{
+    padding-top: 10px;
+}
+input{
+    margin-bottom: 10px;
+    padding-right: 120px;
+}
+button{
+    border-radius: 10px; 
+    background-color: deepskyblue; 
+    color:white;
+    width: 100%;
+}
+.iniciosesion > div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}

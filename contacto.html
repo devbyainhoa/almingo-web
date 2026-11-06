@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+
+            <a href="home.html"><img src="imagen/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul class="menu" style="padding-left: 0px; padding: 10px;">
+                <li><a href="home.html"><strong>Home</strong></a></li>
+                <li><a href="about.html"><strong>About</strong></a></li>
+                <li>
+                    <a href="services.html"><strong>Services </strong></a>
+                    <ul class="submenu">
+                        <li><a href=""><strong>Gira completa</strong></a></li>
+                        <li><a href=""><strong>Galeria</strong></a></li>
+                        <li><a href=""><strong>Compra de entradas</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html"><strong>Contact</strong></a></li>
+                <li><a href=""><strong>Solution</strong></a></li>
+                <li>
+                    <a><strong>English </strong></a>
+                    <ul class="submenu">
+                        <li><a href=""><strong>Español</strong></a></li>
+                        <li><a href=""><strong>Euskera</strong></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="login.html" class="login"><strong>Login/Register</strong></a>
+
+    </header>
+
+    <main>
+        <div class="caja">
+            <div class="texto">
+                <h3>CONTACT US AND START YOUR PROJECT</h3>
+                <h1>Let’s build something great together</h1>
+                <h3>Do you have an idea for a software application or a digital project?<br>
+                We are ready to build the effective digital solution you need. <br>
+                Contact us to make it a reality.</h3>
+            </div>
+            <form action="">
+            <div class="contacto">
+                <h3>Get in Touch</h3>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="𖡌" required>
+                    <label for="email">Email address/ direccion de correo electronico</label>
+                    <input type="email" id="email" name="email" placeholder="✉" required>
+                    <label for="proyecto">Proyect type/Tipo de proyecto</label>
+
+                    <select name="proyecto" id="proyecto">
+                        <option value="Custom software">Custom software</option>
+                        <option value="Web app">Web app</option>
+                        <option value="Mobile app">Mobile app</option>
+                        <option value="Gamification">Gamification</option>
+                    </select>
+                    <label for="descripcion">Descripción:</label>
+                    <textarea style="width: 400px; height: 150px;"></textarea>
+                    <button type="submit">SEND REQUEST/ENVIAR SOLICITUD</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
