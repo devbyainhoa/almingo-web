@@ -1,92 +1,321 @@
-*{
-    margin: 0;
-}
-body {
-    background: linear-gradient(to bottom, rgb(248, 190, 82), white, blue);
-    height: 100vh; 
-    margin: 0;
-}
-header {
+#about-intro 
+{
+    min-height: 650px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px 30px;
-}
-header nav{
-    flex:1;
-    display: flex;
-    justify-content: space-around;
-}
-.logo{
-    height: 100px;
-}
-header a {
-    text-decoration: none;
-    color: black;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.menu{
-    display: flex;
-    list-style: none;
-    font-size: 30px;
-    background-color: white;
-    border: solid 5px rgb(205, 204, 204);
-    border-radius: 10px;
-}
-.menu li {
-    position: relative;
-}
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    list-style: none;
-    padding: 10px;
-}
-.menu li:hover .submenu {
-    display: block;
-}
-.login{
-    display: flex;
-    list-style: none;
-    font-size: 30px;
-    background-color: white;
-    border: solid 5px rgb(205, 204, 204);
-    border-radius: 10px;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 70px 6%;
+    background: linear-gradient(120deg, #F5F3FF, #EEF2FF);
+    color: #111827;
 }
 
-main{
+.about-content 
+{
+    width: 47%;
+}
+.about-content .section-label 
+{
+    display: inline-block;
+    color: #6C63FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about-content h1 
+{
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #111827;
+    max-width: 700px;
+}
+
+.about-content p 
+{
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    color: #4B5563;
+    max-width: 650px;
+}
+
+.about-content h2 
+{
+    font-size: 23px;
+    line-height: 1.5;
+    color: #6C63FF;
+    margin-top: 30px;
+    max-width: 650px;
+}
+
+.about-image 
+{
+    width: 46%;
+}
+
+.about-image img 
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(49, 46, 129, 0.15);
+}
+/* MISSION, VISION AND VALUES */
+
+#identity 
+{
+    padding: 80px 6%;
+    background: linear-gradient(120deg, #111827, #312E81, #4C1D95);
+    color: #FFFFFF;
+}
+
+.identity-heading 
+{
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.identity-heading .section-label 
+{
+    display: inline-block;
+    color: #C4B5FD;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.identity-heading h2 
+{
+    font-size: 38px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.identity-heading p 
+{
+    font-size: 17px;
+    color: #D1D5DB;
+}
+
+.identity-cards 
+{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.identity-card 
+{
+    flex: 1;
+    position: relative;
+    padding: 35px;
+    min-height: 260px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+    border: 1px solid rgba(196, 181, 253, 0.3);
+    border-radius: 14px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.identity-card:hover 
+{
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.card-icon 
+{
+    font-size: 38px;
+    color: #C4B5FD;
+    margin: 15px 0;
+}
+
+.identity-card h3 
+{
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.card-line 
+{
+    width: 45px;
+    height: 3px;
+    background-color: #A78BFA;
+    margin: 0 auto 20px;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+.identity-card:hover .card-line 
+{
+    width: 100px;
+}
+
+.identity-card p 
+{
+    font-size: 16px;
+    line-height: 1.7;
+    color: #E5E7EB;
+}
+/* OUR APPROACH */
+
+#approach 
+{
+    padding: 90px 6%;
+    background: linear-gradient(120deg, #F5F3FF, #EEF2FF);
+    color: #111827;
+}
+
+.approach-heading 
+{
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.approach-heading .section-label 
+{
+    color: #6C63FF;
+}
+
+.approach-heading h2 
+{
+    font-size: 40px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.approach-heading p 
+{
+    font-size: 18px;
+    color: #4B5563;
+}
+
+.approach-steps 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.approach-steps 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.approach-steps::before 
+{
+    content: "";
+    position: absolute;
+    top: 57px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 3px;
+    background: linear-gradient(to right, #6C63FF, #A78BFA);
+    z-index: 0;
+}
+
+.approach-step 
+{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.step-icon 
+{
+    width: 75px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
-}
-h1,h3,h5{
-    padding-top: 10px;
-}
-h1{
-    font-size: 90px;
-}
-.imagenhome{
-    width: 800px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background-color: #312E81;
+    color: #FFFFFF;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-aside{
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 30px;
+.approach-step:hover .step-icon 
+{
+    transform: translateY(-8px);
+    background-color: #6C63FF;
 }
-.cajas{
-    display: flex;
+
+.approach-step h3 
+{
+    font-size: 23px;
+    color: #312E81;
+    margin-bottom: 15px;
 }
-.caja{
-    background-color: white;
-    border: solid 5px;
-    border-radius: 20px;
-    padding:10px;
-    margin: 10px;
+
+.approach-step p 
+{
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4B5563;
+}
+/* CONTACT CALL TO ACTION */
+
+#about-cta 
+{
+    padding: 85px 6%;
+    text-align: center;
+    background: linear-gradient(120deg, #111827, #312E81, #4C1D95);
+    color: #FFFFFF;
+}
+
+#about-cta .section-label 
+{
+    display: inline-block;
+    color: #C4B5FD;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#about-cta h2 
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#about-cta p 
+{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #E5E7EB;
+    margin-bottom: 30px;
+}
+
+.cta-button 
+{
+    display: inline-block;
+    padding: 15px 32px;
+    background-color: #8B5CF6;
+    color: #FFFFFF;
+    border: 2px solid #8B5CF6;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover 
+{
+    background-color: transparent;
+    color: #FFFFFF;
+    transform: translateY(-4px);
 }
