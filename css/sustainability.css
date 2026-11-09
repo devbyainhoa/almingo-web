@@ -1,0 +1,275 @@
+
+/* PRESENTACIÓN DE SOSTENIBILIDAD */
+
+#sustainability-hero
+{
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 70px 6%;
+    background: linear-gradient(120deg, #111827, #312E81, #4C1D95);
+    color: #FFFFFF;
+}
+
+.sustainability-intro
+{
+    width: 65%;
+}
+
+.sustainability-intro .section-label
+{
+    display: inline-block;
+    color: #C4B5FD;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.sustainability-intro h1
+{
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.sustainability-intro p
+{
+    font-size: 19px;
+    line-height: 1.7;
+    color: #E5E7EB;
+    max-width: 650px;
+}
+
+/* OBJETIVOS DE DESARROLLO SOSTENIBLE */
+
+#sustainable-goals
+{
+    padding: 85px 6%;
+    background: linear-gradient(120deg, #F5F3FF, #EEF2FF);
+    color: #111827;
+}
+
+.goals-heading
+{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.goals-heading .section-label
+{
+    color: #6C63FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.goals-heading h2
+{
+    font-size: 38px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.goals-heading p
+{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4B5563;
+}
+
+.goals-cards
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+/* CENTRAR LAS TARJETAS DE LA SEGUNDA FILA */
+
+/* PRIMERA FILA: TRES TARJETAS */
+
+.goal-card:nth-child(-n+3)
+{
+    grid-column: span 2;
+}
+
+/* SEGUNDA FILA: DOS TARJETAS CENTRADAS */
+
+.goal-card:nth-child(4)
+{
+    grid-column: 2 / 4;
+}
+
+.goal-card:nth-child(5)
+{
+    grid-column: 4 / 6;
+}
+
+.goal-card
+{
+    padding: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(49, 46, 129, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.goal-card:hover
+{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(49, 46, 129, 0.15);
+}
+
+.goal-card img
+{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.goal-card h3
+{
+    font-size: 21px;
+    color: #312E81;
+    margin-bottom: 15px;
+}
+
+.goal-card p
+{
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4B5563;
+}
+
+/* PRÁCTICAS SOSTENIBLES */
+
+#sustainable-practices
+{
+    padding: 85px 6%;
+    background-color: #FFFFFF;
+    color: #111827;
+}
+
+.practices-heading
+{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.practices-heading .section-label
+{
+    color: #6C63FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.practices-heading h2
+{
+    font-size: 38px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.practices-heading p
+{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4B5563;
+}
+
+.practices-items
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.practice-item
+{
+    flex: 1;
+    padding: 25px;
+    border-left: 3px solid #8B5CF6;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.practice-item:hover
+{
+    transform: translateY(-6px);
+    border-color: #312E81;
+}
+
+.practice-item h3
+{
+    font-size: 22px;
+    color: #312E81;
+    margin-bottom: 15px;
+}
+
+.practice-item p
+{
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4B5563;
+}
+
+/* PROYECTO SUSTAINABLE BINGO */
+
+#sustainable-bingo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+    padding: 85px 6%;
+    background: linear-gradient(120deg, #F5F3FF, #EEF2FF);
+    color: #111827;
+}
+
+.bingo-image
+{
+    width: 48%;
+}
+
+.bingo-image img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(49, 46, 129, 0.15);
+}
+
+.bingo-content
+{
+    width: 48%;
+}
+
+.bingo-content .section-label
+{
+    display: inline-block;
+    color: #6C63FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.bingo-content h2
+{
+    font-size: 36px;
+    line-height: 1.2;
+    color: #312E81;
+    margin-bottom: 22px;
+}
+
+.bingo-content p
+{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4B5563;
+    margin-bottom: 18px;
+}

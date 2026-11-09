@@ -162,11 +162,23 @@
 }
 /* OUR APPROACH */
 
-#approach 
+#approach
 {
-    padding: 90px 6%;
-    background: linear-gradient(120deg, #F5F3FF, #EEF2FF);
+    padding: 85px 6%;
+    background-color: #FFFFFF;
     color: #111827;
+}
+/* SEPARADOR ENTRE SECCIONES */
+
+#approach::before
+{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: -35px auto 55px;
+    background: linear-gradient(90deg, #6C63FF, #A78BFA);
+    border-radius: 5px;
 }
 
 .approach-heading 
@@ -318,4 +330,113 @@
     background-color: transparent;
     color: #FFFFFF;
     transform: translateY(-4px);
+}
+/* MEET OUR FOUNDERS */
+
+#founders
+{
+    padding: 85px 6%;
+    background: linear-gradient(120deg, #F5F3FF, #EEF2FF);
+    color: #111827;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.founders-heading
+{
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 50px;
+}
+
+.founders-heading .section-label
+{
+    color: #6C63FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.founders-heading h2
+{
+    font-size: 38px;
+    color: #312E81;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.founders-heading p
+{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4B5563;
+    margin-bottom: 12px;
+}
+
+/* TARJETAS DE LAS FUNDADORAS */
+
+.founders-cards
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.founder-card
+{
+    width: 30%;
+    padding: 35px 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(49, 46, 129, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-card:hover
+{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(49, 46, 129, 0.15);
+}
+
+/* INICIALES */
+
+.founder-icon
+{
+    width: 95px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6C63FF, #8B5CF6);
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.founder-card h3
+{
+    font-size: 21px;
+    color: #312E81;
+    margin-bottom: 12px;
+}
+
+.founder-card p
+{
+    font-size: 15px;
+    color: #6B7280;
+}
+
+/* TEXTO FINAL */
+
+.founders-closing
+{
+    max-width: 850px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4B5563;
 }

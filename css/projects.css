@@ -1,0 +1,251 @@
+
+/* PRESENTACIÓN DE PROYECTOS */
+
+#projects-hero 
+{
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 70px 6%;
+    background: linear-gradient(120deg, #111827, #312E81, #4C1D95);
+    color: #FFFFFF;
+}
+
+.projects-intro 
+{
+    width: 65%;
+}
+
+.projects-intro .section-label 
+{
+    display: inline-block;
+    color: #C4B5FD;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.projects-intro h1 
+{
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.projects-intro p 
+{
+    font-size: 19px;
+    line-height: 1.7;
+    color: #E5E7EB;
+    max-width: 700px;
+}
+
+/* PROYECTO DESTACADO */
+
+#featured-project 
+{
+    padding: 80px 6%;
+    background: linear-gradient(120deg, #F5F3FF, #EEF2FF);
+    color: #111827;
+}
+
+.featured-heading 
+{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.featured-heading .section-label 
+{
+    color: #6C63FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.featured-heading h2 
+{
+    font-size: 38px;
+    margin-top: 15px;
+}
+
+.featured-card 
+{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 35px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(49, 46, 129, 0.08);
+}
+
+.featured-image 
+{
+    width: 45%;
+}
+
+.featured-image img 
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.featured-content 
+{
+    flex: 1;
+}
+
+.project-category 
+{
+    color: #6C63FF;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.featured-content h3 
+{
+    font-size: 30px;
+    color: #312E81;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.featured-content p 
+{
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4B5563;
+    margin-bottom: 18px;
+}
+
+/* OTROS PROYECTOS */
+
+#other-projects 
+{
+    padding: 80px 6%;
+    background-color: #FFFFFF;
+    color: #111827;
+}
+
+.other-projects-heading 
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.other-projects-heading .section-label 
+{
+    color: #6C63FF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.other-projects-heading h2 
+{
+    font-size: 38px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.other-projects-heading p 
+{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4B5563;
+}
+
+.other-projects-cards 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.other-project-card 
+{
+    position: relative;
+    overflow: hidden;
+    padding: 35px;
+    background-color: #F5F3FF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(49, 46, 129, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.other-project-card::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #8B5CF6;
+    transition: width 0.3s ease;
+}
+
+.other-project-card:hover::before 
+{
+    width: 100%;
+}
+
+.other-project-card:hover 
+{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(49, 46, 129, 0.15);
+}
+
+.other-project-icon 
+{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    background-color: #312E81;
+    color: #FFFFFF;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+}
+
+.other-project-card:hover .other-project-icon 
+{
+    transform: scale(1.12);
+}
+
+.other-project-card h3 
+{
+    font-size: 23px;
+    color: #312E81;
+    margin-bottom: 15px;
+}
+
+.other-project-card p 
+{
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4B5563;
+    margin-bottom: 22px;
+}
+
+.project-tag 
+{
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: #EDE9FE;
+    color: #5B21B6;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

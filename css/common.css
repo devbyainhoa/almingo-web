@@ -102,3 +102,14 @@ footer
     margin-bottom: 10px;
 }
 
+/* PAGINA ACTUAL DEL MENU */
+
+.menu a.active
+{
+    color: #6C63FF;
+}
+
+.menu a.active::after
+{
+    transform: scaleX(1);
+}
