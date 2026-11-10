@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALMINGO | Soluciones Digitales</title>
+    <meta name="description" content="ALMINGO - Desarrollo de software innovador y soluciones digitales.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+    <header>
+
+        <a href="home-es.html" class="logo">
+            <img src="imagen/logo.png" alt="Logotipo de ALMINGO">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="home-es.html">Inicio</a></li>
+                <li><a href="services-es.html">Servicios</a></li>
+                <li><a href="projects-es.html">Proyectos</a></li>
+                <li><a href="sustainability-es.html">Sostenibilidad</a></li>
+                <li><a href="contact-es.html" class="active">Contacto</a></li>
+                <li><a href="about-es.html">Sobre nosotros</a></li>
+                <li class="language-switch">
+                    <a href="contact.html">EN</a>
+                    <span>|</span>
+                    <a href="contact-es.html" class="language-current">ES</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- PRESENTACIÓN DE CONTACTO -->
+        <section id="contact-hero">
+
+            <span class="section-label">CONTACTA CON NOSOTROS</span>
+
+            <h1>Creemos algo increíble juntos.</h1>
+
+            <p>
+                ¿Tienes una idea, una pregunta o un proyecto en mente?
+                Estaremos encantados de escucharte.
+            </p>
+
+        </section>
+
+        <!-- INFORMACIÓN Y FORMULARIO DE CONTACTO -->
+        <section id="contact-section">
+
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <div class="contact-info">
+
+                <span class="section-label">INFORMACIÓN DE CONTACTO</span>
+
+                <h2>Empecemos una conversación.</h2>
+
+                <p>
+                    Cuéntanos qué necesitas y nuestro equipo
+                    estará encantado de ayudarte.
+                </p>
+
+                <div class="contact-detail">
+                    <h3>Correo electrónico</h3>
+                    <p>info@almingo.com</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Ubicación</h3>
+                    <p>España</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Horario de atención</h3>
+                    <p>De lunes a viernes · 9:00 - 17:00</p>
+                </div>
+
+                <!-- BLOQUE DE AYUDA -->
+                <div class="contact-extra">
+                    <h3>¿Tienes alguna pregunta?</h3>
+                    <p>
+                        Estamos aquí para ayudarte a transformar
+                        tus ideas en soluciones digitales.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <div class="contact-form-container">
+
+                <span class="section-label">ENVÍANOS UN MENSAJE</span>
+
+                <h2>Cuéntanos tu proyecto.</h2>
+
+                <form class="contact-form">
+
+                    <!-- NOMBRE -->
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Introduce tu nombre" required>
+                    </div>
+
+                    <!-- CORREO ELECTRÓNICO -->
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="ejemplo@email.com" required>
+                    </div>
+
+                    <!-- EMPRESA -->
+                    <div class="form-group">
+                        <label for="company">Empresa (opcional)</label>
+                        <input type="text" id="company" name="company"
+                               placeholder="Nombre de tu empresa">
+                    </div>
+
+                    <!-- TELÉFONO -->
+                    <div class="form-group">
+                        <label for="phone">Número de teléfono</label>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="+34 600 000 000">
+                    </div>
+
+                    <!-- SERVICIO DE INTERÉS -->
+                    <div class="form-group">
+                        <label for="service">¿Qué servicio te interesa?</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="software">Desarrollo de software a medida</option>
+                            <option value="web">Desarrollo web</option>
+                            <option value="mobile">Desarrollo de aplicaciones móviles</option>
+                            <option value="gamification">Gamificación y aprendizaje electrónico</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+
+                    <!-- CÓMO NOS HA CONOCIDO -->
+                    <div class="form-group">
+                        <label for="source">¿Cómo nos has conocido?</label>
+                        <select id="source" name="source" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="social-media">Redes sociales</option>
+                            <option value="search-engine">Motor de búsqueda</option>
+                            <option value="recommendation">Recomendación</option>
+                            <option value="advertisement">Publicidad</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+
+                    <!-- MENSAJE -->
+                    <div class="form-group form-message">
+                        <label for="message">Cuéntanos tu proyecto</label>
+                        <textarea id="message" name="message"
+                                  rows="5"
+                                  placeholder="Escribe tu mensaje aquí..."
+                                  required></textarea>
+                    </div>
+
+                    <!-- BOTÓN DE ENVÍO -->
+                    <button type="submit" class="contact-button">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 ALMINGO S.L. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

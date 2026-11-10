@@ -113,3 +113,40 @@ footer
 {
     transform: scaleX(1);
 }
+/* SELECTOR DE IDIOMA */
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 5px;
+}
+
+.menu .language-switch a 
+{
+    font-size: 14px;
+    font-weight: 700;
+    color: #6B7280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu .language-switch a::after 
+{
+    display: none;
+}
+
+.menu .language-switch a:hover 
+{
+    color: #6C63FF;
+}
+
+.language-switch a.language-current 
+{
+    color: #6C63FF;
+}
+
+.language-switch span 
+{
+    color: #D1D5DB;
+    font-size: 14px;
+}
