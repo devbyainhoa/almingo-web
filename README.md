@@ -1,4 +1,3 @@
-
 # ALMINGO S.L. – Página web corporativa
 
 ## 1. Descripción del proyecto
